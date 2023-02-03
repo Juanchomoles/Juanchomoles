@@ -3,9 +3,9 @@ package Actividades;
 import java.util.Random;
 import java.util.Scanner;
 /**
- * Actividad 510-511
+ * Metodos de Arrays
  * 
- * Programa con opciones relacionadas a los arrays
+ * Ordenacion e implementacion de investigadores de arrays
  * 
  * @author: Juan Molés
  * version 1.0
