@@ -1,0 +1,39 @@
+/* Estilos generales de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las celdas de encabezado */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos de las celdas de datos */
+td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos alternados para filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el hover (cuando el mouse pasa sobre una fila) */
+tr:hover {
+    background-color: #ddd;
+}
+a{
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border: solid 1px;
+    border-radius: 3px;
+}

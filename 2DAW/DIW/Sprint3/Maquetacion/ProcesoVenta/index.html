@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="home">Home</h1>
+    </header>
+    <main class="customer">
+        <h1>Datos de la empresa</h1>
+        <div id="Empresa">
+            <form id="paymentForm" action="Facturacio-c-e.html" method="post">
+                <div>
+                    <label for="nombre">Nombre de la Empresa: </label>
+                    <input id="nombre" title="Nombre" class="text" placeholder="Nombre" pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(?:\s+[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+){1,5}(?<!\s)$" required>
+                </div>
+                <div>
+                    <label for="cif">CIF de la Empresa: </label>
+                    <input id="cif" title="Cif" class="text" placeholder="Introduce el CIF" pattern="[A-Z][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required>
+                </div>
+                <div>
+                    <label for="dominio">Dominio: (opcional) </label>
+                    <input id="dominio" title="Dominio" class="text" placeholder="Dominio">
+                </div>
+                <div>
+                    <label for="telefono">Telefono: </label>
+                    <input id="telefono" title="Telefono" class="text" placeholder="Telefono" pattern="[0-9]{9}" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input id="email" title="Email" class="text" type="email" pattern="[a-zA-Z0-9.]+(?:\.[a-z0-9]+)*@(?:[a-z](?:[a-z]*[a-z])?\.)+[a-z](?:[a-z]*[a-z])?" placeholder="Email" required>
+                </div>
+                <div id="direccion">
+                    <label>Dirección: </label>
+                    <input id="direccion" title="Dirección" class="text" placeholder="Dirección" style="width:300px;" required>
+                </div>
+                <div>
+                    <label>Seleccione metodo de pago </label>
+                    <select name="Metodo de pago" id="metodo-pago" required>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="visa">Visa</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" class="terminosChecked" id="terminos" value="Acepto Terminos y condiciones" required>
+                    <label>Acepto Terminos y <a href="#" id="conditions">Condiciones de uso</a></label>
+                </div>
+                <button id="pagar" type="button" onclick="submitButton()">Pagar</button>
+            </form>
+        </div>
+        <div class="modal">
+            <div class="modal_container">
+                <h3 class="modal_title">Cuidado!</h3>
+                <p class="modal_info">Esta seguro de que quiere salir?</p>
+                <p class="modal_info">Se perderán los datos</p>
+                <div class="next">
+                    <a href="Facturacio-c-e.html" id="si" class="modal_linkButton">Si</a>
+                    <a id="no" class="modal_linkButton">No</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

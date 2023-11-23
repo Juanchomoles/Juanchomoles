@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha384-JcK3eNlhaN1t8o8+F6WoaG1bd/6DZxKRQBq6IIV5eSdpec15Lkqy5r1VP9aD4Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/grid.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/modal.js" defer></script>
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row navegador">
+            <nav class="col-6 elementsNav">
+                <img src="img/logoBHEC.png">
+            </nav>
+            <nav class="col-6 usuario">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="ico/usuari-Groc.png" alt="Imatge Usuari" id="usuari">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div>
+            <div class="row">
+                <aside class="col-2 aside">
+                    <ul>
+                        <li><i class="fas fa-home"></i> Inicio</li>
+                        <li><i class="fas fa-exchange-alt"></i> Movimientos</li>
+                        <li><i class="fas fa-shopping-cart"></i> Pedidos</li>
+                        <li><i class="fas fa-users"></i> Usuarios</li>
+                        <li><i class="fas fa-car"></i> Vehiculos</li>
+                        <li><i class="fas fa-file-invoice"></i> Facturas</li>
+                        <li><i class="fas fa-cogs"></i> Ajustes</li>
+                        <li><i class="fas fa-sign-in-alt"></i> Entradas</li>
+                    </ul>
+                </aside>
+                <article class="col-10">
+                    <h1>Lista de Pedidos</h1>
+                    <hr>
+                
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Usuario</th>
+                        <th>Producto</th>
+                        <th>Estado</th>
+                        <th>Precio</th>
+                        <th colspan="2">Operaciones</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan</td>
+                            <td>Lambo</td>
+                            <td>En curso</td>
+                            <td>80€</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan</td>
+                            <td>Lambo</td>
+                            <td>En curso</td>
+                            <td>80€</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan</td>
+                            <td>Lambo</td>
+                            <td>En curso</td>
+                            <td>80€</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan</td>
+                            <td>Lambo</td>
+                            <td>En curso</td>
+                            <td>80€</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            </div>
+        </div>
+
+    </main>
+    <!--    MODAL    -->
+    <div id="menu-modal" class="menu-modal">
+        <div class="menu-content">
+            <a href="#" class="close-button" onclick="closeMenuModal()">&times;</a>
+            <div class="user-info">
+                <img src="img/usuari.png" alt="Imagen de perfil">
+                <div class="user-details">
+                    <h3>Tu Nombre</h3>
+                    <p>correo@example.com</p>
+                </div>
+            </div>
+            <ul class="menu-links">
+                <li class="dropdown">
+                    <a href="#">Mis pedidos</a>
+                <li><a href="#">Novetats</a></li>
+                </li>
+                <li class="dropdown">
+                    <a href="#" id="administration-menu-btn">Administració</a>
+                    <ul class="dropdown-content" id="administration-menu">
+                        <li><a href="#">Configuració del compter</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="div-sessio">
+            <ul>
+                <li id="tancar-sessio"><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--    FIN MODAL    -->
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-12 nom-logo">
+                <img src="img/logoBHEC.png" alt="Logotip Empresa" width="50px">
+                <h3>BHEC</h3>
+            </div>
+            <hr class="separator" />
+        </div>
+
+        <div class="row">
+            <nav class="col-12">
+                <ul>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Terminos & Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Politica de Privacidad</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

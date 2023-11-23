@@ -1,0 +1,138 @@
+/* || General setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%; /* Establece una altura mínima para el cuerpo */
+  background-color: #f0f0f0; /* Fondo principal */
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #333333; /* Color de texto principal */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* || header layout */
+header {
+  background-color: #1d6fa5; /* Color de encabezado */
+  color: #fff; /* Color del texto del encabezado */
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* || main layout */
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo para el div que contiene el formulario */
+.form-container {
+  width: 100%; /* Ajusta el ancho del formulario al 100% de la ventana */
+  max-width: 600px; /* Ancho máximo para evitar que el formulario sea demasiado ancho en pantallas grandes */
+  margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+  padding: 30px; /* Aumenta el padding para dar más espacio al formulario */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los radio buttons */
+.form-radio {
+  text-align: center; /* Centra horizontalmente los radio buttons */
+  margin-bottom: 10px; /* Agrega separación hacia abajo */
+}
+
+.form-radio input[type="radio"] {
+  display: none; /* Oculta los radio buttons nativos */
+}
+
+.form-radio label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Agrega espacio entre las etiquetas de radio */
+}
+
+.form-radio label:hover {
+  background-color: #1d6fa5;
+}
+
+/* Estilo para los radio buttons seleccionados */
+.form-radio input[type="radio"]:checked + label {
+  background-color: #1d6fa5;
+}
+
+
+
+/* Estilo para los campos de entrada con validación */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones */
+.form-buttons {
+  display: flex; /* Configura los botones en línea */
+  justify-content: flex-end; /* Alinea los botones a la derecha del contenedor */
+  margin-top: 20px;
+}
+
+.form-buttons button[type="submit"],
+.form-buttons button[type="reset"],
+.form-buttons button[name="autoRellenar"],
+.form-buttons button[name="guardarDatos"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px; /* Espacio entre los botones */
+}
+
+.form-buttons button[type="submit"]:hover,
+.form-buttons button[type="reset"]:hover,
+.form-buttons button[name="autoRellenar"]:hover,
+.form-buttons button[name="guardarDatos"]:hover {
+  background-color: #1d6fa5;
+}
+
+/* Estilos para los títulos h2 */
+h2 {
+  text-align: center;
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos h3 */
+h3 {
+  text-align: center;
+  color: #333333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los mensajes de validación */
+.form-container input:invalid {
+  border-color: #ff0000; /* Cambia el color del borde en caso de invalidación */
+}
+
+
+

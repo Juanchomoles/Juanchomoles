@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(24, 29, 52);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    align-items: center;
+    margin: 20px;
+    width: 50px;
+}
+
+.peper>ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.peper>ul>li {
+    list-style: none;
+}
+
+.peper>ul>li>a {
+    color: #e7d381;
+}
+
+.peper>ul>li>a:hover {
+    color: #574f2f;
+}
+
+.menu {
+    margin-top: 9%;
+    height: 100%;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu>ul>li {
+    list-style: none;
+}
+
+.busquedad {
+    margin-top: 8%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+main li {
+    list-style: none;
+    padding: 15px;
+    border: solid 1px;
+}
+.compras-realizadas {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.compra {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid rgb(24, 29, 52);
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.compra img {
+    width: 215px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.detalle-compra {
+    text-align: center;
+}
+
+/* Estilos adicionales */
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    color: rgb(24, 29, 52);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(24, 29, 52);
+    margin-top: 7%;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer a {
+    color: #e7d381;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer a:hover {
+    color: #e7d381;
+}
+
+.foot {
+    display: flex;
+}
+
+hr {
+    border: 1px solid  rgb(170, 142, 49);;
+}
+
+.foot {
+    justify-content: center;
+    padding: 2%;
+}
+
+aside {
+    color: #e7d381;
+    height: 100%;
+    width: 20%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.opciones-aside {
+    height: 100%;
+}
+aside a{
+    text-decoration: none;
+    color: white;
+}
+aside a:hover{
+    color: black;
+}
+.opciones-aside>li {
+    background-color: rgb(170, 142, 49);
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e7d381;
+    border-radius: 5px;
+}
+
+.opciones-aside>a {
+    text-decoration: none;
+    color: #e7d381;
+}
+
+.opciones-aside>a:hover {
+    color: #574f2f;
+}
+.info a{
+    text-decoration:underline;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.info a:hover{
+    color: rgb(170, 142, 49);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>ClicCarz</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <form name="formulario" action="alta.php" method="post">
+                <div class="form-container"> <!-- Agregamos una clase para el div del formulario -->
+                    <h2>Registro de Usuario</h2>
+                    <h3>Tipo de usuario</h3>
+                    <div class="form-radio">
+                        <input type="radio" name="userType" value="PAR" id="userTypePAR"> <!-- Añadimos un id -->
+                        <label for="userTypePAR">Particular</label> <!-- Usamos el atributo "for" con el id del input -->
+
+                        <input type="radio" name="userType" value="PRO" id="userTypePRO"> <!-- Añadimos un id -->
+                        <label for="userTypePRO">Profesional</label> <!-- Usamos el atributo "for" con el id del input -->
+                    </div>
+                    <div>
+                        <label for="nombreId"><abbr><strong>* </strong></abbr>Nombre:</label>
+                        <input type="text" name="nombre" id="nombreId" required > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="apellidosId"><abbr><strong>* </strong></abbr>Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidosId" required > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="domicilioId"><abbr><strong>* </strong></abbr>Domicilio:</label>
+                        <input type="text" name="domicilio" id="domicilioId" required> <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="emailId"><abbr><strong>*</strong></abbr>Email:</label>
+                        <input type="email" name="email" id="emailId" required > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="contraseña"><abbr><strong>*</strong></abbr>Contraseña:</label>
+                        <input type="password" name="contraseña" id="contraseña" required  > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="phone"><abbr><strong>*</strong></abbr>Phone:</label>
+                        <input type="tel" name="phone" id="phone" required  > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="dni"><abbr><strong>*</strong></abbr>DNI:</label>
+                        <input type="text" name="dni" id="dni" required  > <!-- Añadimos un id -->
+                    </div>
+                    <div>
+                        <label for="RazonSocial"><abbr><strong>* </strong></abbr>Razon Social:</label>
+                        <input type="text" name="RazonSocial" id="RazonSocial" required > <!-- Añadimos un id -->
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" name="submit">Enviar formulario</button>
+                        <button type="reset" name="reset">Restablecer</button>
+                        <button name="autoRellenar">Autorellenar</button>
+                        <button name="guardarDatos">Guardar</button>
+                    </div>
+
+                </div>
+            </form>
+        </article>
+    </main>
+   <script src="../js/validacio_Formulario.js"></script>
+</body>
+
+</html>
