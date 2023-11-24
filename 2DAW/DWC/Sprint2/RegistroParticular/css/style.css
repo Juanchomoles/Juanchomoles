@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.base {
+    margin: 10px auto;
+    width: 35%; 
+    color: wheat;
+}
+
+.Bloque {
+    background-color: rgb(4, 57, 94);
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+
+button {
+    padding: 10px;
+    margin: 20px 0; /* Ajustamos el margen inferior */
+}
+
+.section {
+    margin: 20px auto;right: 80%;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s;
+    font-size: 100%;
+}
+
+.section.hovered {
+    color: darkgoldenrod;
+}
+
+.popuptext {
+    visibility: hidden;
+    text-align: left;
+    width: 28%;
+    padding: 30px;
+    background-color: darkslategray;
+    color: #fff;
+    border: solid 2px black;
+    border-radius: 6px;
+    position: absolute;
+    left: 34%;
+    font-size: 20px;
+}
+
+.modaltext {
+    visibility: hidden;
+    text-align: center;
+    width: 28%;
+    padding: 35px;
+    background-color: gray;
+    color: #000;
+    border: solid 2px black;
+    border-radius: 6px;
+    position: absolute;
+    left: 34%;
+    margin-top: 10%;
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+}
+
+p{
+    margin-bottom: 10px;
+}
+strong{
+    color: indianred;
+}
+
+.popup {
+    visibility: hidden;
+    margin: 0;
+    color: #fff;
+    position: relative;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+.valid:focus:valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}

@@ -4,31 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-    integrity="sha384-JcK3eNlhaN1t8o8+F6WoaG1bd/6DZxKRQBq6IIV5eSdpec15Lkqy5r1VP9aD4Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-JcK3eNlhaN1t8o8+F6WoaG1bd/6DZxKRQBq6IIV5eSdpec15Lkqy5r1VP9aD4Q" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/grid.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/style_order.css">
     <script src="js/modal.js" defer></script>
+    <script src="js/script.js" defer></script>
 
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row navegador">
-            <nav class="col-6 elementsNav">
-                <img src="img/logoBHEC.png">
+            <nav class="col-12 elementsNav">
+                    <img src="img/logoBHEC.png" id="logo">
+                <div class="usuario">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="ico/usuari-Groc.png" alt="Imatge Usuari" id="usuari">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <nav class="col-6 usuario">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="ico/usuari-Groc.png" alt="Imatge Usuari" id="usuari">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="hamburguesa">
+                <button id="hamburguesa">&#9776;</button>
+            </div>
         </div>
     </header>
 
@@ -50,56 +54,29 @@
                 <article class="col-10">
                     <h1>Lista de Pedidos</h1>
                     <hr>
-                
-                <table>
-                    <thead>
-                        <th>ID</th>
-                        <th>Usuario</th>
-                        <th>Producto</th>
-                        <th>Estado</th>
-                        <th>Precio</th>
-                        <th colspan="2">Operaciones</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Juan</td>
-                            <td>Lambo</td>
-                            <td>En curso</td>
-                            <td>80€</td>
-                            <td>Editar</td>
-                            <td>Borrar</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Juan</td>
-                            <td>Lambo</td>
-                            <td>En curso</td>
-                            <td>80€</td>
-                            <td>Editar</td>
-                            <td>Borrar</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Juan</td>
-                            <td>Lambo</td>
-                            <td>En curso</td>
-                            <td>80€</td>
-                            <td>Editar</td>
-                            <td>Borrar</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Juan</td>
-                            <td>Lambo</td>
-                            <td>En curso</td>
-                            <td>80€</td>
-                            <td>Editar</td>
-                            <td>Borrar</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+
+                    <table>
+                        <thead>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Producto</th>
+                            <th>Estado</th>
+                            <th>Precio</th>
+                            <th colspan="2">Operaciones</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Juan</td>
+                                <td>Lambo</td>
+                                <td>En curso</td>
+                                <td>80€</td>
+                                <td>Editar</td>
+                                <td>Borrar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
             </div>
         </div>
 

@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 }
 
 body {
@@ -17,11 +18,12 @@ body {
 .elementsNav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.elementsNav img{
-    width: 50px;
+#logo{
     padding: 1%;
+    width: 70px;
 }
 
 .navegador li{
@@ -29,10 +31,11 @@ body {
     text-align: end;
 }
 
-.usuario{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+#usuari{
+    width: 35px;
+}
+.hamburguesa{
+    display: none; 
 }
 
 /*  ----------------------------------------------- ASIDE -----------------------------------------------  */
@@ -263,9 +266,45 @@ footer div {
     color: #555;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 770px) {
+    .visible{
+        display: block;
+    }
+
+    #logo{
+        margin-top: 1%;
+        width: 40px;
+    }
+
+    #usuari{
+        margin-top: 30%;
+    }
+
     aside{
-        display: none; /* Quita los estilos de lista predeterminados */
-        padding: 0; /* Quita el relleno predeterminado de la lista */
+        display: none;
+        margin: 0;
+        position: absolute;
+    }
+
+    aside ul{
+        padding: 0;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .compras-realizadas {
+        justify-content: center;
+    }
+
+    .hamburguesa{
+        margin: auto;
+        display: block;   
+        align-content: start;
+    }
+
+    #hamburguesa{
+        padding: 9.5px;
     }
 }

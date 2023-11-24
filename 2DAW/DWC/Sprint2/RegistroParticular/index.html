@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Validaciones(valid/invalid)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="popup">
+        <span class="popuptext" id="myPopup">
+            <p style="font-size: 25px; text-align: center;"><strong>Instrucciones para rellenar el
+                formulario</strong></p>
+            <p>El <strong>Nombre</strong> solo puede contener letras(puede haber mas de uno)</p>
+            <p>El <strong>Apellido</strong> tiene las mismas instrucciones que el nombre</p>
+            <p>El <strong>email</strong> no puede contener caracters extraños(exceptuando la @ y el .)</p>
+            <p>La <strong>contraseña</strong> debe contener como mínimo 8 caracteres, entre ellos una mayúscula una
+                minúscula, un número y un caracter especial</p>
+            <p><strong>Confirmar Contraseña</strong> debe ser igual a la contraseña añadida anteriormente</p>
+            <p>El <strong>telefono</strong> debe tener 9 caracteres, y no puede haber espacios entre ellos</p>
+            <p>el <strong>DNI</strong> debe tener 8 numeros y una letra, sin espacios entre ellos</p>
+            <p><strong>Razon social</strong> hace referencia al nombre de la empresa, este se valida igual que el nombre</p>
+            <p style="color: burlywood; text-align: left;">presiona ESC para salir</p>
+        </span>
+    </div>
+    <div class="popup">
+        <span class="modaltext" id="modal">
+            <h2>Advertencia</h2>
+           <p>¿Seguro que deseas resetear el formulario?</p>
+           <p>Los cambios no se guardaran</p>
+           <button type="button" name="aceptar" id="accept">Aceptar</button>
+           <button type="button" name="rechazar" id="decline">Rechazar</button>
+        </span>
+    </div>
+    <div class="base">
+        
+        <form name="formulario" action="prueba.html" method="post" id="form">
+            <div class="Bloque">
+                <h2>Registro de Usuario</h2>
+                
+
+                <div class="section">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" pattern='^[a-zA-Z ]{0,25}$' id="nombre">
+                </div>
+
+                <div class="section">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" pattern='^[a-zA-Z ]{0,25}$' id="apellido">
+                </div>
+
+                <div class="section">
+                    <label for="domicilio">Domicilio:</label>
+                    <input type="text" name="domicilio" pattern='^[a-zA-Z ]{0,50}[0-9]{0,5}$' id="domicilio">
+                </div>
+
+                <div class="section">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" pattern="^[a-zA-Z0-9]+@[a-z0-9]+\.[a-z]{2,4}$" id="email">
+                </div>
+
+                <div class="section">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" name="contraseña" pattern='((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,})'
+                        id="contraseña">
+                </div>
+
+                <div class="section">
+                    <label for="confirmPass">Confirmar Contraseña:</label>
+                    <input type="password" name="confirmPass" id="confirmPass">
+                </div>
+
+                <div class="section">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" pattern='^[0-9]{9}$' id="phone">
+                </div>
+
+                <div class="section">
+                    <label for="dni">DNI:</label>
+                    <input type="text" name="dni" pattern='^[0-9]{8}[A-Z]$' id="dni">
+                </div>
+                
+                <div class="section">
+                    <label for="razonSocial">Razon social:</label>
+                    <input type="text" name="rs" pattern='^[a-zA-Z ._\-,]{0,25}$' id="rs">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" name="submit" id="enviar">Enviar</button>
+                    <button type="button" name="CD" id="cd">Click Derecho aquí</button>
+                    <button type="reset" name="reseteo" id="formReset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
