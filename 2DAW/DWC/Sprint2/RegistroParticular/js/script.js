@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }    
     });
-        
+    
     name.addEventListener('input', (event) => {
         valids["nombre"] = validInput(name);
     });

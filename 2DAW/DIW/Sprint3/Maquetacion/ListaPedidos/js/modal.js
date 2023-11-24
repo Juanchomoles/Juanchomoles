@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function(){
+    
+    let burguer = document.getElementById('hamburguesa');
+    let aside = document.querySelector('aside');
+
+    burguer.addEventListener('click', (event)=>{
+            aside.classList.toggle('visible');
+    });
+});
 function openMenuModal() {
     var menuModal = document.getElementById('menu-modal');
     menuModal.style.display = 'block';
@@ -29,13 +38,4 @@ administrationMenuBtn.addEventListener('click', function (event) {
     }
 });
 
-
-// Agregar controladores de eventos al hacer clic en "Catàleg" y "Administració"
-/*
-document.getElementById('catalog-menu-btn').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-    var catalogMenu = document.getElementById('catalog-menu');
-    catalogMenu.style.display = (catalogMenu.style.display === 'block') ? 'none' : 'block';
-});
-*/
 

@@ -1,8 +1,19 @@
-document.addEventListener('DOMContentLoaded', function(){
-    let burguer = document.getElementById('hamburguesa');
-    let aside = document.querySelector('aside');
+$(document).ready(function () {
+    
+    $("#inputUsuario").on('input', function () {
+        filterTable();
+    });
 
-    burguer.addEventListener('click', (event)=>{
-            aside.classList.toggle('visible');
-    })
+    function filterTable() {
+        var filter = $("#inputUsuario").val().toUpperCase();
+        $("#table tbody tr").each(function () {
+            var text = $(this).find("td:eq(2)").text();
+
+            if (text.toUpperCase().indexOf(filter) > -1)
+                $(this).show();
+            else
+                $(this).hide();
+
+        });
+    };
 });

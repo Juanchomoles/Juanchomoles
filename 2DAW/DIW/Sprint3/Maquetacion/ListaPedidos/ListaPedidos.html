@@ -10,8 +10,11 @@
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/grid.css">
     <link type="text/css" rel="stylesheet" href="css/style_order.css">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
     <script src="js/modal.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js"></script>
 
 </head>
 
@@ -54,21 +57,33 @@
                 <article class="col-10">
                     <h1>Lista de Pedidos</h1>
                     <hr>
-
-                    <table>
+                    <input type="text" id="inputUsuario" placeholder="Buscar por Usuario...">
+                    <table id="table">
                         <thead>
+                            <th></th>
                             <th>ID</th>
                             <th>Usuario</th>
-                            <th>Producto</th>
+                            <th>Vehiculo</th>
                             <th>Estado</th>
                             <th>Precio</th>
                             <th colspan="2">Operaciones</th>
                         </thead>
                         <tbody>
                             <tr>
+                                <td><input type="checkbox" class="seleccionar-fila"></td>
                                 <td>1</td>
                                 <td>Juan</td>
                                 <td>Lambo</td>
+                                <td>En curso</td>
+                                <td>80€</td>
+                                <td>Editar</td>
+                                <td>Borrar</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="seleccionar-fila"></td>
+                                <td>2</td>
+                                <td>Pedro</td>
+                                <td>Toyota</td>
                                 <td>En curso</td>
                                 <td>80€</td>
                                 <td>Editar</td>

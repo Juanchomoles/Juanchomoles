@@ -95,6 +95,10 @@ td{
 tr:nth-child(even) {
     background-color: rgb(212, 197, 147, 0.6);
 }
+
+#inputUsuario{
+    margin-top: 1%;
+}
 /*  ----------------------------------------------- FOOTER Y MENU NAVEGACIÓ FOOTER -----------------------------------------------  */
 
 
