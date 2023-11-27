@@ -57,37 +57,32 @@
                 <article class="col-10">
                     <h1>Lista de Pedidos</h1>
                     <hr>
-                    <input type="text" id="inputUsuario" placeholder="Buscar por Usuario...">
+                    <input type="text" id="inputUsuario" placeholder="Buscador">
                     <table id="table">
                         <thead>
-                            <th></th>
                             <th>ID</th>
                             <th>Usuario</th>
                             <th>Vehiculo</th>
                             <th>Estado</th>
                             <th>Precio</th>
-                            <th colspan="2">Operaciones</th>
+                            <th>Operaciones</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="checkbox" class="seleccionar-fila"></td>
-                                <td>1</td>
-                                <td>Juan</td>
-                                <td>Lambo</td>
-                                <td>En curso</td>
-                                <td>80€</td>
-                                <td>Editar</td>
-                                <td>Borrar</td>
+                                <td data-titulo="Id:">1</td>
+                                <td data-titulo="Nombre:">Juan</td>
+                                <td data-titulo="Vehiculo:">Lambo</td>
+                                <td data-titulo="Estado:">En curso</td>
+                                <td data-titulo="Precio:">80€</td>
+                                <td class="operaciones"><a href="order_update.php/?id=">Editar</a><a>Borrar</a><input type="checkbox" class="seleccionar-fila"></td> 
                             </tr>
                             <tr>
-                                <td><input type="checkbox" class="seleccionar-fila"></td>
-                                <td>2</td>
-                                <td>Pedro</td>
-                                <td>Toyota</td>
-                                <td>En curso</td>
-                                <td>80€</td>
-                                <td>Editar</td>
-                                <td>Borrar</td>
+                                <td data-titulo="Id:">2</td>
+                                <td data-titulo="Nombre">Pedro</td>
+                                <td data-titulo="Vehiculo:">Toyota</td>
+                                <td data-titulo="Estado:">En curso</td>
+                                <td data-titulo="Precio:">80€</td>
+                                <td class="operaciones"><a href="order_update.php/?id=">Editar</a><a>Borrar</a><input type="checkbox" class="seleccionar-fila"></td> 
                             </tr>
                         </tbody>
                     </table>
